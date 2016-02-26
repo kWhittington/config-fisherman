@@ -23,5 +23,5 @@ function start_console_dev
              --name rabbitmq \
              forcemultiplier/rabbitmq
 
-  echo 'Run `console-server/bin/setup` to pulate the database'
+  echo 'Run `console-server/bin/setup` to populate the database'
 end
