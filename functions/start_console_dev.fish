@@ -1,11 +1,11 @@
 # see console-server/README.md
 function start_console_dev
-  set -x DB_HOST (docker-machine ip default)
-  set -x DB_PASSWORD newcontext
+  set -gx DB_HOST (docker-machine ip default)
+  set -gx DB_PASSWORD newcontext
 
-  set -x RMQ_PORT 5672
-  set -x RMQ_USER newcontext
-  set -x RMQ_PASSWORD newcontext
+  set -gx RMQ_PORT 5672
+  set -gx RMQ_USER newcontext
+  set -gx RMQ_PASSWORD newcontext
 
   docker rm -f database
   docker run -d \
